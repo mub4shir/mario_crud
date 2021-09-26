@@ -8,15 +8,29 @@
 
     	git clone <repoID>
 
-    2. Open CMD/terminal in the folder and type the following command:
+    2. Rename "config/config.env.env" to "config/config.env" and update the values/settings to your own
+
+    3. Open CMD/terminal in the folder and type the following command:
 
     	i. npm install
 
-    3. Now to run the server type the following command:
+    4. Now to run the server type the following command:
 
     	npm run dev
 
-### There are 5 end points in the api:
+## Database Seeder
+
+To seed the database with mario with data from the "\_data" folder, run
+
+```
+# Destroy all data
+node seeder -d
+
+# Import all data
+node seeder -i
+```
+
+## There are 5 end points in the api:
 
     1:GET http://localhost:3000/mario
     Response with an array of Mario characters.
